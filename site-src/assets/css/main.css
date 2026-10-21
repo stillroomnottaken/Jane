@@ -322,10 +322,6 @@ img{max-width:100%;height:auto}
 .ticks{display:grid;gap:10px}
 .ticks li{position:relative;padding-left:26px;color:var(--noir)}
 .ticks li::before{content:"";position:absolute;left:0;top:.55em;width:12px;height:12px;border-radius:50%;background:var(--forest)}
-.profile{display:grid;grid-template-columns:1fr auto;gap:20px 40px;align-items:center}
-.profile h2{margin-bottom:.3em}
-.profile p{margin:0;max-width:620px}
-@media(max-width:760px){.profile{grid-template-columns:1fr}}
 .sub{margin-top:28px}
 .channels{display:grid;gap:16px}
 .channel{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px}
@@ -343,6 +339,7 @@ img{max-width:100%;height:auto}
 .sent-bad{border-left-color:#8c2f12}
 .btn[disabled]{opacity:.65;cursor:progress;transform:none}
 .info p{margin:0 0 1em}
+.info p.nib{margin:0 0 .15em}
 .info .actions{margin-bottom:16px}
 .info .btn-line{border-color:var(--deep);color:var(--deep)}
 .info .btn-line:hover{background:var(--deep);color:var(--forest)}

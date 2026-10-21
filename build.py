@@ -44,6 +44,10 @@ def build_assets():
             text = fn(text)
             p.write_text(text, encoding="utf-8")
         versions[rel] = hashlib.md5(text.encode()).hexdigest()[:8]
+    # the logo is fingerprinted too, so replacing LogoBMS.png busts the 1-year browser cache
+    logo = out / "img" / "LogoBMS.png"
+    if logo.exists():
+        versions["img/LogoBMS.png"] = hashlib.md5(logo.read_bytes()).hexdigest()[:8]
     return versions
 
 

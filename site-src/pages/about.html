@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-{% from "partials/macros.html" import wa_btn with context %}
 {% block title %}{{ L('About Us', 'Tentang Kami') }}{% endblock %}
 {% block desc %}{{ L('PT Berkat Muri Sejahtera is an Indonesian trading company established in 2025 and based in Jakarta. It connects suppliers with business buyers through sourcing, aggregation and distribution.', 'PT Berkat Muri Sejahtera adalah perusahaan perdagangan Indonesia yang didirikan pada 2025 dan berbasis di Jakarta. Perusahaan menghubungkan pemasok dengan pembeli bisnis lewat pengadaan, agregasi, dan distribusi.') }}{% endblock %}
 {% block main %}
@@ -31,26 +30,6 @@
       <div><dt>{{ L('Focus', 'Fokus') }}</dt><dd>{{ L('Sourcing, aggregation, distribution', 'Pengadaan, agregasi, distribusi') }}</dd></div>
       <div><dt>NIB</dt><dd>{{ site.nib }}</dd></div>
     </dl>
-  </div>
-</section>
-
-<section class="sec sec-alt" id="profile" aria-labelledby="profile-h">
-  <div class="wrap profile">
-    <div>
-      <h2 id="profile-h">{{ L('Company profile', 'Profil perusahaan') }}</h2>
-      {% if site.profile_pdf %}
-      <p>{{ L('Download the BMS company profile for a fuller overview.', 'Unduh profil perusahaan BMS untuk gambaran yang lebih lengkap.') }}</p>
-      {% else %}
-      <p>{{ L('A downloadable company profile is not published yet. You can ask our team to send it once it is available.', 'Profil perusahaan yang dapat diunduh belum dipublikasikan. Anda dapat meminta tim kami mengirimkannya setelah tersedia.') }}</p>
-      {% endif %}
-    </div>
-    <div>
-      {% if site.profile_pdf %}
-      <a class="btn btn-forest btn-lg" href="{{ site.profile_pdf }}" download>{{ L('Download company profile (PDF)', 'Unduh profil perusahaan (PDF)') }}</a>
-      {% else %}
-      {{ wa_btn(L('Request the company profile', 'Minta profil perusahaan'), L('Hello BMS, I would like to receive your company profile when it is available.', 'Halo BMS, saya ingin menerima profil perusahaan Anda jika sudah tersedia.'), 'btn-forest btn-lg') }}
-      {% endif %}
-    </div>
   </div>
 </section>
 

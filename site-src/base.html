@@ -36,7 +36,7 @@
         <span>Menu</span>
       </button>
       <a class="brand" href="{{ url('home') }}" aria-label="{{ site.name }}">
-        <img src="{{ asset('img/logo.png') }}" alt="{{ site.short }}" width="79" height="56">
+        <img src="{{ asset('img/LogoBMS.png') }}" alt="{{ site.short }}" width="79" height="56">
       </a>
       <div class="hdr-r">
         <div class="lang" role="group" aria-label="{{ L('Language', 'Bahasa') }}">
@@ -92,8 +92,8 @@
     <div class="wrap ftr-grid">
       <div>
         <strong class="ftr-name">{{ site.name }}</strong>
-        <p>Jakarta, Indonesia</p>
         <p>NIB {{ site.nib }}</p>
+        <p>Jakarta, Indonesia</p>
       </div>
       <ul class="ftr-contacts">
         {% if site.email %}<li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>{% endif %}

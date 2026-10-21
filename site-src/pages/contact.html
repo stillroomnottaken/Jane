@@ -34,11 +34,11 @@
 
     <aside class="info" aria-label="{{ L('Company details', 'Detail perusahaan') }}">
       <h2>{{ site.name }}</h2>
+      <p class="nib">NIB {{ site.nib }}</p>
       <p>Jakarta, Indonesia</p>
-      <dl>
-        {% if site.email %}<div><dt>Email</dt><dd><a href="mailto:{{ site.email }}">{{ site.email }}</a></dd></div>{% endif %}
-        <div><dt>NIB</dt><dd>{{ site.nib }}</dd></div>
-      </dl>
+      {% if site.email %}<dl>
+        <div><dt>Email</dt><dd><a href="mailto:{{ site.email }}">{{ site.email }}</a></dd></div>
+      </dl>{% endif %}
     </aside>
   </div>
 </section>

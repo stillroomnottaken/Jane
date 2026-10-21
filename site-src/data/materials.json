@@ -46,39 +46,12 @@
     }
   },
   {
-    "slug": "palm-based-derivatives",
-    "cat": "bio",
-    "image": "",
-    "name": {
-      "en": "Palm-Based Derivatives",
-      "id": "Turunan Kelapa Sawit"
-    }
-  },
-  {
     "slug": "cnsl",
     "cat": "bio",
     "image": "cnsl.webp",
     "name": {
       "en": "CNSL",
       "id": "CNSL"
-    }
-  },
-  {
-    "slug": "uco",
-    "cat": "bio",
-    "image": "",
-    "name": {
-      "en": "UCO",
-      "id": "UCO"
-    }
-  },
-  {
-    "slug": "pome",
-    "cat": "bio",
-    "image": "",
-    "name": {
-      "en": "POME",
-      "id": "POME"
     }
   },
   {
